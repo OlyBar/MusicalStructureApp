@@ -18,7 +18,7 @@
 
     <TextView
         android:text="@string/mozart_radio_instructions"
-        android:textSize="14sp"
+        android:textSize="10sp"
         android:gravity="center_vertical"
         android:paddingLeft="16dp"
         android:paddingRight="16dp"

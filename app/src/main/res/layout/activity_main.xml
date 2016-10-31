@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.example.olympiabardis.musicalstructureapp.MainActivity"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/station_list_description"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textColor="@android:color/black"
+        android:gravity="center_vertical"
+        android:text="@string/station_list_description"
+        android:textAlignment="center"
+        android:textSize="14sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            app:srcCompat="@android:drawable/presence_audio_busy"/>
+
+        <TextView
+            android:id="@+id/station_name"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="80dp"
+            android:paddingLeft="16dp"
+            android:textStyle="bold"
+            android:textColor="#004D40"
+            android:text="Classical Music Stations (3)" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            app:srcCompat="@android:drawable/presence_audio_busy"/>
+
+         <TextView
+            android:id="@+id/Mozart"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="80dp"
+            android:paddingLeft="16dp"
+            android:layout_below="@+id/station_name"
+            android:textColor="#004D40"
+            android:text="Mozart Radio" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            app:srcCompat="@android:drawable/presence_audio_busy"/>
+
+
+        <TextView
+            android:id="@+id/Beethoven"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="80dp"
+            android:paddingLeft="16dp"
+            android:layout_below="@+id/Mozart"
+            android:textColor="#004D40"
+            android:text="Beethoven Radio" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            app:srcCompat="@android:drawable/presence_audio_busy"/>
+
+
+        <TextView
+            android:id="@+id/Chopin"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="80dp"
+            android:paddingLeft="16dp"
+            android:textColor="#004D40"
+            android:layout_below="@+id/Beethoven"
+            android:text="Chopin Radio" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageButton
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="65dp"
+        android:layout_marginRight="25dp"
+        app:srcCompat="@android:drawable/ic_menu_add"
+        android:id="@+id/addbutton"
+        android:background="@drawable/oval"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
